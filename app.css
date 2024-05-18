@@ -1,0 +1,35 @@
+.container {
+  background-color: pink;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-image: url("https://www.transformernet.com/wp-content/uploads/footerimage_team2.jpg");
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-position: center;
+}
+.row {
+  display: grid;
+  color: aliceblue;
+  place-items: center;
+}
+.row h2 {
+  font-size: 32px;
+}
+.row h5 {
+  font-size: 14px;
+}
+.row svg {
+  width: 55px;
+  fill: aliceblue;
+  height: 55px;
+}
+
+@media (max-width: 738px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+}
